@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "hardcored",
+  "version": "${version}",
+
+  "name": "HardCored",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "RetroTrack"
+  ],
+  "contact": {
+    "homepage": "https://volar.ga/",
+    "sources": "https://github.com/RetroTrack/HardCored"
+  },
+
+  "license": "MIT License",
+  "icon": "assets/hardcored/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.retrotrack.hardcored.HardCored"
+    ],
+    "client": [
+      "net.retrotrack.hardcored.HardCoredClient"
+    ]
+  },
+  "mixins": [
+    "hardcored.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
