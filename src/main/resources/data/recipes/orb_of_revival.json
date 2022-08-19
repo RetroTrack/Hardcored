@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "nen",
+    "ece",
+    "nen"
+  ],
+  "key": {
+    "n": {
+      "item": "minecraft:netherite_ingot",
+      "count": 5
+    },
+    "e": {
+      "item": "minecraft:end_crystal",
+      "count": 5
+    },
+    "c": {
+      "item": "minecraft:nether_star",
+      "count": 1
+    }
+  },
+  "result": {
+    "item": "hardcored:orb_of_revival",
+    "count": 1
+  }
+}
