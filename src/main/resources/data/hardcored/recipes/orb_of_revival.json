@@ -7,16 +7,13 @@
   ],
   "key": {
     "n": {
-      "item": "minecraft:netherite_ingot",
-      "count": 5
+      "item": "minecraft:netherite_block"
     },
     "e": {
-      "item": "minecraft:end_crystal",
-      "count": 5
+      "item": "minecraft:end_crystal"
     },
     "c": {
-      "item": "minecraft:nether_star",
-      "count": 1
+      "item": "minecraft:nether_star"
     }
   },
   "result": {

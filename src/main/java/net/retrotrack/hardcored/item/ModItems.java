@@ -6,12 +6,15 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import net.retrotrack.hardcored.HardCored;
+import net.retrotrack.hardcored.item.custom.OrbOfRevivalItem;
 
 public class ModItems {
 
-    public static final Item ORB_OF_REVIVAL = registerItem("orb_of_revival",
-            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+    //public static final Item ORB_OF_REVIVAL = registerItem("orb_of_revival",
+    //        new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
+    public static final Item ORB_OF_REVIVAL = registerItem("orb_of_revival",
+            new OrbOfRevivalItem(new FabricItemSettings().group(ItemGroup.MISC)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(HardCored.MOD_ID, name), item);

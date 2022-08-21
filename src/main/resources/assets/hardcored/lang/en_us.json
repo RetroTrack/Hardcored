@@ -1,3 +1,26 @@
 {
-  "item.hardcored.orb_of_revival": "Orb Of Revival"
+  "item.hardcored.orb_of_revival": "Orb Of Revival",
+
+
+
+
+
+
+
+
+  "players.hardcored.player1": "RetroTrack81299",
+  "players.hardcored.player2": "QuinTrashBin",
+  "players.hardcored.player3": "Ryuma",
+  "players.hardcored.player4": "DuckyQuacks_",
+  "players.hardcored.player5": "Felixsu",
+  "players.hardcored.player6": "koifishhh",
+  "players.hardcored.player7": "Luckeigh",
+  "players.hardcored.player8": "SmugAssCheshire",
+  "players.hardcored.player9": "WezelsWorstje",
+  "players.hardcored.player10": "Zraphy",
+  "players.hardcored.player11": "Tibbles",
+
+
+  "gui.hardcored.reviveplayer1": " Revive RetroTrack81299",
+  "gui.hardcored.reviveplayer2": " Revive QuinTrashBin"
 }
