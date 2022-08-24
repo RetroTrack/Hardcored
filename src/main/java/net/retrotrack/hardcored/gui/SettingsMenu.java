@@ -92,7 +92,7 @@ public class SettingsMenu extends LightweightGuiDescription {
 
         WButton button12 = new WButton(new ItemIcon(player12), Text.literal(" Revive " + Text.translatable("players.hardcored.player12").getString()));
         button12.setAlignment(HorizontalAlignment.LEFT);
-        if (Text.translatable("players.hardcored.player12").getString().equals("???")){button12.setLabel(Text.translatable("players.hardcored.notset").formatted(Formatting.RED));}
+        if (Text.translatable("players.hardcored.player12").getString().equals("???")){button12.setLabel(Text.translatable("players.hardcored.notset"));}
         root.add(button12, 12, 13, 9, 20);
     }
 }
