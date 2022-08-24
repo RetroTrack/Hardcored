@@ -9,6 +9,7 @@ import net.minecraft.util.TypedActionResult;
 import net.minecraft.world.World;
 import net.retrotrack.hardcored.gui.ExampleScreen;
 import net.retrotrack.hardcored.gui.SettingsMenu;
+import net.retrotrack.hardcored.gui.MenuItems;
 
 public class OrbOfRevivalItem extends Item {
     public OrbOfRevivalItem(Settings settings) {
@@ -17,6 +18,7 @@ public class OrbOfRevivalItem extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
+        MenuItems.SetMenuItems();
         MinecraftClient.getInstance().send(() -> MinecraftClient.getInstance().setScreen(new ExampleScreen(new SettingsMenu())));
         return super.use(world, user, hand);
     }

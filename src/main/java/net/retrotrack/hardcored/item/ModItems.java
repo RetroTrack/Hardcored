@@ -10,6 +10,7 @@ import net.retrotrack.hardcored.item.custom.OrbOfRevivalItem;
 
 public class ModItems {
 
+
     //public static final Item ORB_OF_REVIVAL = registerItem("orb_of_revival",
     //        new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
