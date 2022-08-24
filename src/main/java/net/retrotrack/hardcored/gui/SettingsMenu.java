@@ -7,8 +7,17 @@ import io.github.cottonmc.cotton.gui.widget.WLabel;
 import io.github.cottonmc.cotton.gui.widget.data.HorizontalAlignment;
 import io.github.cottonmc.cotton.gui.widget.data.Insets;
 import io.github.cottonmc.cotton.gui.widget.icon.ItemIcon;
+import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
+import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
+import net.minecraft.client.MinecraftClient;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.network.PacketByteBuf;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
+import net.minecraft.util.WorldSavePath;
+import net.retrotrack.hardcored.networking.ModMessages;
+
+import java.util.Arrays;
 
 import static net.retrotrack.hardcored.gui.MenuItems.*;
 
@@ -30,6 +39,9 @@ public class SettingsMenu extends LightweightGuiDescription {
 
 
         root.validate(this);
+
+
+
     }
 
     public void LoadButtons() {
@@ -37,6 +49,7 @@ public class SettingsMenu extends LightweightGuiDescription {
         button1.setAlignment(HorizontalAlignment.LEFT);
         if (Text.translatable("players.hardcored.player1").getString().equals("???")){button1.setLabel(Text.translatable("players.hardcored.notset"));}
         root.add(button1, 1, 3, 9, 20);
+
 
         WButton button2 = new WButton(new ItemIcon(player2), Text.literal(" Revive " + Text.translatable("players.hardcored.player2").getString()));
         button2.setAlignment(HorizontalAlignment.LEFT);
@@ -94,5 +107,70 @@ public class SettingsMenu extends LightweightGuiDescription {
         button12.setAlignment(HorizontalAlignment.LEFT);
         if (Text.translatable("players.hardcored.player12").getString().equals("???")){button12.setLabel(Text.translatable("players.hardcored.notset"));}
         root.add(button12, 12, 13, 9, 20);
+
+
+
+        button1.setOnClick(() -> {
+                PacketByteBuf data = PacketByteBufs.create();
+                data.writeString(Text.translatable("players.hardcored.player1").getString());
+                ClientPlayNetworking.send(ModMessages.PLAYER_1, data);
+        });
+        button2.setOnClick(() -> {
+                PacketByteBuf data = PacketByteBufs.create();
+                data.writeString(Text.translatable("players.hardcored.player2").getString());
+                ClientPlayNetworking.send(ModMessages.PLAYER_2, data);
+        });
+        button3.setOnClick(() -> {
+                PacketByteBuf data = PacketByteBufs.create();
+                data.writeString(Text.translatable("players.hardcored.player3").getString());
+                ClientPlayNetworking.send(ModMessages.PLAYER_3, data);
+        });
+        button4.setOnClick(() -> {
+                PacketByteBuf data = PacketByteBufs.create();
+                data.writeString(Text.translatable("players.hardcored.player4").getString());
+                ClientPlayNetworking.send(ModMessages.PLAYER_4, data);
+        });
+        button5.setOnClick(() -> {
+                PacketByteBuf data = PacketByteBufs.create();
+                data.writeString(Text.translatable("players.hardcored.player5").getString());
+                ClientPlayNetworking.send(ModMessages.PLAYER_5, data);
+        });
+        button6.setOnClick(() -> {
+                PacketByteBuf data = PacketByteBufs.create();
+                data.writeString(Text.translatable("players.hardcored.player6").getString());
+                ClientPlayNetworking.send(ModMessages.PLAYER_6, data);
+        });
+        button7.setOnClick(() -> {
+                PacketByteBuf data = PacketByteBufs.create();
+                data.writeString(Text.translatable("players.hardcored.player7").getString());
+                ClientPlayNetworking.send(ModMessages.PLAYER_7, data);
+        });
+        button8.setOnClick(() -> {
+                PacketByteBuf data = PacketByteBufs.create();
+                data.writeString(Text.translatable("players.hardcored.player8").getString());
+                ClientPlayNetworking.send(ModMessages.PLAYER_8, data);
+        });
+        button9.setOnClick(() -> {
+                PacketByteBuf data = PacketByteBufs.create();
+                data.writeString(Text.translatable("players.hardcored.player9").getString());
+                ClientPlayNetworking.send(ModMessages.PLAYER_9, data);
+        });
+        button10.setOnClick(() -> {
+                PacketByteBuf data = PacketByteBufs.create();
+                data.writeString(Text.translatable("players.hardcored.player10").getString());
+                ClientPlayNetworking.send(ModMessages.PLAYER_10, data);
+        });
+        button11.setOnClick(() -> {
+                PacketByteBuf data = PacketByteBufs.create();
+                data.writeString(Text.translatable("players.hardcored.player11").getString());
+                ClientPlayNetworking.send(ModMessages.PLAYER_11, data);
+        });
+        button12.setOnClick(() -> {
+                PacketByteBuf data = PacketByteBufs.create();
+                data.writeString(Text.translatable("players.hardcored.player12").getString());
+                ClientPlayNetworking.send(ModMessages.PLAYER_12, data);
+        });
+
+
     }
 }
