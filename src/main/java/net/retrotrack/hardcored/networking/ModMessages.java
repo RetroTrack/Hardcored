@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.util.Identifier;
 import net.retrotrack.hardcored.HardCored;
+import net.retrotrack.hardcored.networking.packets.CloseScreenS2CPacket;
 import net.retrotrack.hardcored.networking.packets.ReviveC2SPacket;
 import net.retrotrack.hardcored.networking.packets.ScreenC2SPacket;
 import net.retrotrack.hardcored.networking.packets.ScreenS2CPacket;
@@ -11,7 +12,7 @@ import net.retrotrack.hardcored.networking.packets.ScreenS2CPacket;
 public class ModMessages {
     public static final Identifier USEITEM_ID = new Identifier(HardCored.MOD_ID, "useitem");
     public static final Identifier SCREEN_ID = new Identifier(HardCored.MOD_ID, "openscreen");
-
+    public static final Identifier CLOSE_SCREEN = new Identifier(HardCored.MOD_ID, "closescreen");
     public static final Identifier PLAYER_1 = new Identifier(HardCored.MOD_ID, "player1");
     public static final Identifier PLAYER_2 = new Identifier(HardCored.MOD_ID, "player2");
     public static final Identifier PLAYER_3 = new Identifier(HardCored.MOD_ID, "player3");
@@ -47,5 +48,6 @@ public class ModMessages {
     public static void registerS2CPackets() {
         //Server -> Client
         ClientPlayNetworking.registerGlobalReceiver(SCREEN_ID, ScreenS2CPacket::receive);
+        ClientPlayNetworking.registerGlobalReceiver(CLOSE_SCREEN, CloseScreenS2CPacket::receive);
     }
 }

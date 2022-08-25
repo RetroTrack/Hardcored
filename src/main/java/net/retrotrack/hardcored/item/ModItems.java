@@ -11,11 +11,17 @@ import net.retrotrack.hardcored.item.custom.OrbOfRevivalItem;
 public class ModItems {
 
 
-    //public static final Item ORB_OF_REVIVAL = registerItem("orb_of_revival",
-    //        new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+    public static final Item HEART = registerItem("heart",
+           new Item(new FabricItemSettings().group(ModItemGroup.HARDCORED)));
+
+    public static final Item HARDCORE_HEART = registerItem("hardcore_heart",
+            new Item(new FabricItemSettings().group(ModItemGroup.HARDCORED)));
+
+    public static final Item GREEN_HEART = registerItem("green_heart",
+            new Item(new FabricItemSettings().group(ModItemGroup.HARDCORED)));
 
     public static final Item ORB_OF_REVIVAL = registerItem("orb_of_revival",
-            new OrbOfRevivalItem(new FabricItemSettings().group(ItemGroup.MISC)));
+            new OrbOfRevivalItem(new FabricItemSettings().group(ModItemGroup.HARDCORED)));
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registry.ITEM, new Identifier(HardCored.MOD_ID, name), item);

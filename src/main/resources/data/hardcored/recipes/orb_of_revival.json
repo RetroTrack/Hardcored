@@ -1,19 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "nen",
-    "ece",
-    "nen"
+    "nDn",
+    "NEN",
+    "nDn"
   ],
   "key": {
     "n": {
-      "item": "minecraft:wheat_seeds"
+      "item": "minecraft:netherite_ingot"
     },
-    "e": {
-      "item": "minecraft:stick"
+    "D": {
+      "item": "minecraft:diamond_block"
     },
-    "c": {
-      "item": "minecraft:dirt"
+    "N": {
+      "item": "minecraft:nether_star"
+    },
+    "E": {
+      "item": "minecraft:end_crystal"
     }
   },
   "result": {

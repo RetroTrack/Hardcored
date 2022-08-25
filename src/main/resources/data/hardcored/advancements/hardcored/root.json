@@ -1,0 +1,37 @@
+{
+  "criteria": {
+    "crafting_table": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "minecraft:crafting_table"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "hardcored:textures/gui/advancements/backgrounds/deepslate.png",
+    "description": {
+      "translate": "advancements.hardcored.root.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "hardcored:hardcore_heart"
+    },
+    "show_toast": false,
+    "title": {
+      "translate": "advancements.hardcored.root.title"
+    }
+  },
+  "requirements": [
+    [
+      "crafting_table"
+    ]
+  ]
+}

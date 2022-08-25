@@ -1,12 +1,18 @@
 {
   "item.hardcored.orb_of_revival": "Orb Of Revival",
+  "item.hardcored.hardcore_heart": "Hardcore Heart",
+  "item.hardcored.green_heart": "Green Heart",
+  "item.hardcored.heart": "Heart",
+
+
+
+  "itemGroup.hardcored.hardcored": "HardCored Items",
 
 
 
 
-
-
-
+  "advancements.hardcored.root.description": "Mod Made For QuinTrashBin's Hardcore SMP",
+  "advancements.hardcored.root.title": "HardCored",
 
   "players.hardcored.player1": "RetroTrack81299",
   "players.hardcored.player2": "QuinTrashBin",

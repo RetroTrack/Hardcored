@@ -4,20 +4,16 @@ import io.github.cottonmc.cotton.gui.client.LightweightGuiDescription;
 import io.github.cottonmc.cotton.gui.widget.WButton;
 import io.github.cottonmc.cotton.gui.widget.WGridPanel;
 import io.github.cottonmc.cotton.gui.widget.WLabel;
+import io.github.cottonmc.cotton.gui.widget.WSprite;
 import io.github.cottonmc.cotton.gui.widget.data.HorizontalAlignment;
 import io.github.cottonmc.cotton.gui.widget.data.Insets;
 import io.github.cottonmc.cotton.gui.widget.icon.ItemIcon;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
-import net.minecraft.client.MinecraftClient;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.network.PacketByteBuf;
 import net.minecraft.text.Text;
-import net.minecraft.util.Formatting;
-import net.minecraft.util.WorldSavePath;
+import net.minecraft.util.Identifier;
 import net.retrotrack.hardcored.networking.ModMessages;
-
-import java.util.Arrays;
 
 import static net.retrotrack.hardcored.gui.MenuItems.*;
 
@@ -31,8 +27,10 @@ public class SettingsMenu extends LightweightGuiDescription {
         root.setInsets(Insets.ROOT_PANEL);
 
 
-        WLabel label = new WLabel(Text.literal("Revival"), 0xFFC11D00);
-        root.add(label, 10, 0, 10, 20);
+        //WLabel label = new WLabel(Text.literal("Revival"), 0xFFC11D00);
+        //root.add(label, 10, 0, 10, 20);
+        WSprite icon = new WSprite(new Identifier("hardcored:textures/gui/revival.png"));
+        root.add(icon, 4, 0, 11, 2);
 
 
         LoadButtons();

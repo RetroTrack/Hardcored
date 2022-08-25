@@ -1,0 +1,33 @@
+{
+  "parent": "hardcored:hardcored/obtain_orb",
+  "display": {
+    "icon": {
+      "item": "hardcored:heart"
+    },
+    "title": {
+      "text": "Second Chance",
+      "color": "red"
+    },
+    "description": {
+      "text": "Get Revived",
+      "color": "green"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "revived": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+
+      }
+    }
+  },
+  "requirements": [
+    [
+      "revived"
+    ]
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "parent": "hardcored:hardcored/root",
+  "display": {
+    "icon": {
+      "item": "hardcored:orb_of_revival"
+    },
+    "title": {
+      "text": "Another Life",
+      "color": "red"
+    },
+    "description": {
+      "text": "Obtain An Orb Of Revival",
+      "color": "green"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "orb_of_revival": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "hardcored:orb_of_revival"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "orb_of_revival"
+    ]
+  ]
+}

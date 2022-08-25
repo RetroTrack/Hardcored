@@ -1,0 +1,33 @@
+{
+  "parent": "hardcored:hardcored/obtain_orb",
+  "display": {
+    "icon": {
+      "item": "hardcored:green_heart"
+    },
+    "title": {
+      "text": "Helping Hand",
+      "color": "dark_green"
+    },
+    "description": {
+      "text": "Revive Someone",
+      "color": "green"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "revived": {
+      "trigger": "minecraft:impossible",
+      "conditions": {
+
+      }
+    }
+  },
+  "requirements": [
+    [
+      "revived"
+    ]
+  ]
+}
