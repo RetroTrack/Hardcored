@@ -7,12 +7,19 @@
 
 
   "itemGroup.hardcored.hardcored": "HardCored Items",
+  "title.hardcored.died": "You Have Died!",
+  "subtitle.hardcored.died": "Wait For Someone To Revive You!",
+  "message.hardcored.revived": "%1$s has revived %2$s",
+  "message.hardcored.notdead": "%1$s isn't dead yet!",
+  "message.hardcored.selfrevive": "You can't revive yourself, and btw you aren't even dead!",
+  "message.hardcored.offline": "%1$s isn't online!",
 
 
 
-
-  "advancements.hardcored.root.description": "Mod Made For QuinTrashBin's Hardcore SMP",
+  "advancements.hardcored.root.description": "Mod Made For QuinTrashBin's Hardcore SMP, Made By Retro",
   "advancements.hardcored.root.title": "HardCored",
+
+  "ui.hardcored.buttons.revive": "Revive %1$s",
 
   "players.hardcored.player1": "RetroTrack81299",
   "players.hardcored.player2": "QuinTrashBin",
@@ -25,14 +32,14 @@
   "players.hardcored.player9": "wxssel",
   "players.hardcored.player10": "Zraphy",
   "players.hardcored.player11": "Tibbles",
-  "players.hardcored.player12": "???",
-  "players.hardcored.player13": "???",
-  "players.hardcored.player14": "???",
-  "players.hardcored.player15": "???",
-  "players.hardcored.player16": "???",
-  "players.hardcored.player17": "???",
-  "players.hardcored.player18": "???",
-  "players.hardcored.player19": "???",
-  "players.hardcored.player20": "???",
+  "players.hardcored.player12": "",
+  "players.hardcored.player13": "",
+  "players.hardcored.player14": "",
+  "players.hardcored.player15": "",
+  "players.hardcored.player16": "",
+  "players.hardcored.player17": "",
+  "players.hardcored.player18": "",
+  "players.hardcored.player19": "",
+  "players.hardcored.player20": "",
   "players.hardcored.notset": "Steve"
 }

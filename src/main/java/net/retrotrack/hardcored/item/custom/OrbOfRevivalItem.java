@@ -18,10 +18,10 @@ public class OrbOfRevivalItem extends Item {
 
     @Override
     public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        MenuItems.SetMenuItems();
         if(world.isClient()) {
             //Send Packet From Client To Server
             ClientPlayNetworking.send(ModMessages.USEITEM_ID, PacketByteBufs.create());
+            MenuItems.SetMenuItems();
 
 
             //Add A Cooldown

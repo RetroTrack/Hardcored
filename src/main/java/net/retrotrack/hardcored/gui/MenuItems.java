@@ -82,10 +82,36 @@ public class MenuItems {
         player10nbt.putString("SkullOwner", Text.translatable("players.hardcored.player10").getString());
         player10.setNbt(player10nbt);
 
+
+
         player11nbt.putString("SkullOwner", Text.translatable("players.hardcored.player11").getString());
         player11.setNbt(player11nbt);
 
         player12nbt.putString("SkullOwner", Text.translatable("players.hardcored.player12").getString());
         player12.setNbt(player12nbt);
+
+        player13nbt.putString("SkullOwner", Text.translatable("players.hardcored.player13").getString());
+        player13.setNbt(player13nbt);
+
+        player14nbt.putString("SkullOwner", Text.translatable("players.hardcored.player14").getString());
+        player14.setNbt(player14nbt);
+
+        player15nbt.putString("SkullOwner", Text.translatable("players.hardcored.player15").getString());
+        player15.setNbt(player15nbt);
+
+        player16nbt.putString("SkullOwner", Text.translatable("players.hardcored.player16").getString());
+        player16.setNbt(player16nbt);
+
+        player17nbt.putString("SkullOwner", Text.translatable("players.hardcored.player17").getString());
+        player17.setNbt(player17nbt);
+
+        player18nbt.putString("SkullOwner", Text.translatable("players.hardcored.player18").getString());
+        player18.setNbt(player18nbt);
+
+        player19nbt.putString("SkullOwner", Text.translatable("players.hardcored.player19").getString());
+        player19.setNbt(player19nbt);
+
+        player20nbt.putString("SkullOwner", Text.translatable("players.hardcored.player20").getString());
+        player20.setNbt(player20nbt);
     }
 }

@@ -25,6 +25,14 @@ public class ModMessages {
     public static final Identifier PLAYER_10 = new Identifier(HardCored.MOD_ID, "player10");
     public static final Identifier PLAYER_11 = new Identifier(HardCored.MOD_ID, "player11");
     public static final Identifier PLAYER_12 = new Identifier(HardCored.MOD_ID, "player12");
+    public static final Identifier PLAYER_13 = new Identifier(HardCored.MOD_ID, "player13");
+    public static final Identifier PLAYER_14 = new Identifier(HardCored.MOD_ID, "player14");
+    public static final Identifier PLAYER_15 = new Identifier(HardCored.MOD_ID, "player15");
+    public static final Identifier PLAYER_16 = new Identifier(HardCored.MOD_ID, "player16");
+    public static final Identifier PLAYER_17 = new Identifier(HardCored.MOD_ID, "player17");
+    public static final Identifier PLAYER_18 = new Identifier(HardCored.MOD_ID, "player18");
+    public static final Identifier PLAYER_19 = new Identifier(HardCored.MOD_ID, "player19");
+    public static final Identifier PLAYER_20 = new Identifier(HardCored.MOD_ID, "player20");
 
 
     public static void registerC2SPackets() {
@@ -42,7 +50,14 @@ public class ModMessages {
         ServerPlayNetworking.registerGlobalReceiver(PLAYER_10, ReviveC2SPacket::receive);
         ServerPlayNetworking.registerGlobalReceiver(PLAYER_11, ReviveC2SPacket::receive);
         ServerPlayNetworking.registerGlobalReceiver(PLAYER_12, ReviveC2SPacket::receive);
-
+        ServerPlayNetworking.registerGlobalReceiver(PLAYER_13, ReviveC2SPacket::receive);
+        ServerPlayNetworking.registerGlobalReceiver(PLAYER_14, ReviveC2SPacket::receive);
+        ServerPlayNetworking.registerGlobalReceiver(PLAYER_15, ReviveC2SPacket::receive);
+        ServerPlayNetworking.registerGlobalReceiver(PLAYER_16, ReviveC2SPacket::receive);
+        ServerPlayNetworking.registerGlobalReceiver(PLAYER_17, ReviveC2SPacket::receive);
+        ServerPlayNetworking.registerGlobalReceiver(PLAYER_18, ReviveC2SPacket::receive);
+        ServerPlayNetworking.registerGlobalReceiver(PLAYER_19, ReviveC2SPacket::receive);
+        ServerPlayNetworking.registerGlobalReceiver(PLAYER_20, ReviveC2SPacket::receive);
     }
 
     public static void registerS2CPackets() {
